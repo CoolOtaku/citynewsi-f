@@ -9,14 +9,14 @@ This is my course work on web design. Theme of the site "Ivano-Frankivsk City Ne
 ### Screenshots of the web site:
 
 <p>
-  <img src="screens/s1.png" height="500px"/>
-  <img src="screens/s2.png" height="500px"/>
-  <img src="screens/s3.png" height="500px"/>
-  <img src="screens/s4.png" height="500px"/>
-  <img src="screens/s5.png" height="500px"/>
-  <img src="screens/s6.png" height="500px"/>
-  <img src="screens/s7.png" height="500px"/>
-  <img src="screens/s8.png" height="500px"/>
+  <img src="screens/s1.png" height="20%"/>
+  <img src="screens/s2.png" height="20%"/>
+  <img src="screens/s3.png" height="20%"/>
+  <img src="screens/s4.png" height="20%"/>
+  <img src="screens/s5.png" height="20%"/>
+  <img src="screens/s6.png" height="20%"/>
+  <img src="screens/s7.png" height="20%"/>
+  <img src="screens/s8.png" height="20%"/>
 </p>
 
 ## UA
@@ -26,10 +26,10 @@ This is my course work on web design. Theme of the site "Ivano-Frankivsk City Ne
 ### Скріншоти вебсайту:
 
 <p>
-  <img src="screens/sm1.png" height="500px"/>
-  <img src="screens/sm2.png" height="500px"/>
-  <img src="screens/sm3.png" height="500px"/>
-  <img src="screens/sm4.png" height="500px"/>
+  <img src="screens/sm1.png" height="20%"/>
+  <img src="screens/sm2.png" height="20%"/>
+  <img src="screens/sm3.png" height="20%"/>
+  <img src="screens/sm4.png" height="20%"/>
 </p>
 
 ## Others
