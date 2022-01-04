@@ -41,5 +41,5 @@ This is my course work on web design. Theme of the site "Ivano-Frankivsk City Ne
 ### License
 
 ```
-© 2021, CoolOtaku (ericspz531@gmail.com)
+© 2022, CoolOtaku (ericspz531@gmail.com)
 ```
