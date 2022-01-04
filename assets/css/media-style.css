@@ -1,0 +1,66 @@
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}
+@media all and (max-width : 600px) {
+    .carousel-item{
+        height: 20rem;
+    }
+    .carousel-item > img{
+        height: 20rem;
+    }
+    .carousel-item > div{
+        height: 20rem;
+    }
+    .more-info-block{
+        height: 190px;
+    }
+    p{
+        font-size: 1.0rem;
+        line-height: 1;
+    }
+    .offcanvas-end{
+        width: 100%;
+    }
+}
+@media all and (max-width : 450px) {
+    .carousel-item{
+        height: 15rem;
+    }
+    .carousel-item > img{
+        height: 15rem;
+    }
+    .carousel-caption{
+        padding: 0px;
+        bottom: 20px;
+    }
+    .more-info-block{
+        height: 175px;
+    }
+    .carousel-indicators {
+        margin-bottom: 0px;
+    }
+    .container-fluid{
+        padding: 0px;
+    }
+    .if-info{
+        margin-bottom: 2px;
+        font-size: 0.86rem;
+    }
+}
+@media (min-width: 40em) {
+    .carousel-caption p {
+        margin-bottom: 1.25rem;
+        font-size: 1.25rem;
+        line-height: 1.4;
+    }
+    .featurette-heading {
+        font-size: 50px;
+    }
+}
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: 70%;
+    }
+}

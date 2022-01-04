@@ -1,0 +1,103 @@
+:root{
+  --btn-background-1: -webkit-gradient(radial, -36 22, 0, -47 -341, 465, from(#3c4914), to(#1d1774));
+  --bg-news: rgba(47, 79, 79, 0.4);
+  --bg-white-opasiti: rgba(240, 228, 228, 0.4);
+  --blue-color: #273e47;
+}
+body{
+  background-color: #131313;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+main{
+  background: url(../img/bg_img.jpg) no-repeat 100% 100% fixed;
+  background-size: cover;
+}
+
+.carousel {
+  margin-bottom: 4rem;
+}
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+.carousel-item {
+  height: 32rem;
+}
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 32rem;
+}
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: 400;
+}
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+.featurette-divider {
+  margin: 5rem 0;
+}
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -.05rem;
+}
+
+.btn-primary{
+  background: var(--btn-background-1);
+  border-color: var(--blue-color);
+}
+.btn-primary:hover, .btn-primary:focus{
+  border-color: white;
+}
+h2{
+  color: white;
+}
+p{
+  color: rgba(255,255,255,.55);
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    font-family: 'Cormorant Garamond', serif;
+}
+.navbar-brand{
+    font-family: 'Cormorant Garamond', serif;
+}
+.lead{
+  color: rgba(192, 192, 192);
+}
+.bg-news{
+  background: var(--bg-news);
+}
+.col-md-7, .col-md-5{
+  margin-top: 15px;
+}
+.modal-header{
+  border-bottom: 1px solid var(--bg-news);
+}
+.modal-footer{
+  border-top: 1px solid var(--bg-news);
+}
+.bg-dark-2{
+  background-color: rgba(33,37,41, 0.9);
+}
+.btn-secondary{
+  background-color: rgba(108, 117, 125, 0.6);
+}
+.btn_hiden{
+  background-color: rgba(100, 100, 100, 0);
+  border-color: rgba(100, 100, 100, 0);
+}
+.offcanvas, .offcanvas-header{
+  background-color: var(--blue-color);
+}
+.offcanvas-end{
+  width: 70%;
+}

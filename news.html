@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Перегляд новини</title>
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" href="assets/img/logo.png" sizes="180x180">
+  <link rel="icon" href="assets/img/logo.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="assets/img/logo.png" sizes="16x16" type="image/png">
+  <link rel="mask-icon" href="assets/img/logo.png" color="#7952b3">
+  <link rel="icon" href="assets/img/logo.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/news.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/media-style.css">
+
+</head>
+<body>
+
+<header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+      <img src="assets/img/logo.png" class="bi me-2" width="50" height="50" >
+      <a class="navbar-brand" href="demo_page.html">City news I-F</a>
+      <button class="navbar-toggler shadow-lg" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Головна</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="news.html" aria-current="page">Остання переглянута новина</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="javascript: ShowWeather();">Погода</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Особистий кабінет</a>
+          </li>
+        </ul>
+        <div class="d-flex">
+          <input class="form-control me-2 shadow-lg" id="searchInput" type="search" placeholder="Шукати" aria-label="Напишіть текст для пошуку">
+          <button class="btn btn-lg btn-secondary border-white bg-white text-black shadow-lg" type="submit" id="searchBtn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+              <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+    <div class="px-4 py-5 text-center">
+        <h1 class="display-5 fw-bold text-white" id="title">Title</h1>
+        <div class="col-lg-6 mx-auto">
+          <p class="lead mb-4" id="description">Description</p>
+        </div>
+    </div>
+    <div сlass="container my-4 p-3">
+        <div id="img-silider" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner" id="slider">
+              <!-- Load data on json file -->
+            </div>
+            <button class="carousel-control-prev text-black" type="button" data-bs-target="#img-silider" data-bs-slide="prev">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-arrow-left-circle-fill" viewBox="0 0 40 40">
+                <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
+              </svg>
+              <span class="visually-hidden">Попередня</span>
+            </button>
+            <button class="carousel-control-next text-black" type="button" data-bs-target="#img-silider" data-bs-slide="next">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 40 40">
+                <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+              </svg>
+              <span class="visually-hidden">Наступна</span>
+            </button>
+        </div>
+    </div>
+    <div class="container my-4 text-white" id="all-text">
+
+    </div>
+
+</main>
+<!-- FOOTER -->
+<footer class="container">
+  <p class="float-end px-2 py-2">
+  <a href="#">
+    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
+      <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+    </svg>
+  </a></p>
+  <p class="py-2">&copy; CoolOtaku &middot; <a href="https://github.com/CoolOtaku">Мій Github</a></p>
+</footer>
+
+<div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content bg-dark">
+      <div class="modal-header">
+        <h5 class="modal-title text-white" id="searchModalLabel">Результат пошуку</h5>
+        <button class="btn btn_hiden" data-bs-dismiss="modal" aria-label="Close">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="red" class="bi bi-x-lg" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M13.854 2.146a.5.5 0 0 1 0 .708l-11 11a.5.5 0 0 1-.708-.708l11-11a.5.5 0 0 1 .708 0Z"/>
+            <path fill-rule="evenodd" d="M2.146 2.146a.5.5 0 0 0 0 .708l11 11a.5.5 0 0 0 .708-.708l-11-11a.5.5 0 0 0-.708 0Z"/>
+          </svg>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row" id="searchList">
+          <!-- Load data on json file -->
+        </div>
+      </div>
+      <div class="modal-footer"></div>
+    </div>
+  </div>
+</div>
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="weather_panel">
+  <div class="offcanvas-header">
+    <button type="button" class="btn_hiden" data-bs-dismiss="offcanvas">
+      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="red" class="bi bi-x-lg" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M13.854 2.146a.5.5 0 0 1 0 .708l-11 11a.5.5 0 0 1-.708-.708l11-11a.5.5 0 0 1 .708 0Z"/>
+        <path fill-rule="evenodd" d="M2.146 2.146a.5.5 0 0 0 0 .708l11 11a.5.5 0 0 0 .708-.708l-11-11a.5.5 0 0 0-.708 0Z"/>
+      </svg>
+    </button>
+  </div>
+  <div class="offcanvas-body p-0" height="100%" width="100%">
+  
+    <link type="text/css" rel="stylesheet" href="https://www.meteoprog.ua/css/winformer.min.css?id=100">
+
+    <div class="d-flex justify-content-center meteoprog-informer" data-params='{"city_ids":"2513","domain":"https://www.meteoprog.ua/ua/","id":"61b28b6e2bac92cd648b465a","lang":"ua"}'>
+      <a title="Погода в місті Івано-Франківськ" target="_blank" href="https://www.meteoprog.ua/ua/weather/Ivanofrankivsk/">
+        <img style="margin: 0 auto; display: block" src="https://www.meteoprog.ua/images/preloader.gif" alt="Loading...">
+      </a>
+      <a target="_blank" class="constructor__met2wlink" href="https://www.meteoprog.ua/ua/review/Ivanofrankivsk/">Погода на 2 тижні</a>
+      <a class="constructor__metlink" target="_blank" href="https://www.meteoprog.ua/ua/">
+        <img style="display: block; margin: 0 auto;" alt="Meteoprog" src="https://www.meteoprog.ua/images/meteoprog-inf.png">
+      </a>
+    </div>
+    <script type="text/javascript" src="https://www.meteoprog.ua/js/winformer.min.js?id=100"></script>
+    
+  </div>
+</div>
+
+<!-- JS -->
+<script src="assets/js/jquery.min.js" type="text/javascript"></script>
+<script src="assets/js/bootstrap.js" type="text/javascript"></script>
+<script src="assets/js/main.js" type="text/javascript"></script>
+<script src="assets/js/news.js" type="text/javascript"></script>
+
+</body>
+</html>
