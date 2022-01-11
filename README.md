@@ -1,6 +1,6 @@
 # City news I-F
 
-<p align="center"><img width="128" height="128" src="http://city-news-if.pp.ua/assets/img/logo.png" /></p>
+<p align="center"><img width="128" height="128" src="assets/img/logo.png" /></p>
 
 ## EN
 
