@@ -30,17 +30,18 @@ This is my course work on web design. Theme of the site "Ivano-Frankivsk City Ne
 </p>
 
 #
-
 ## Technologies used
-
+<b>EN:</b>
 - Using Bootstrap (front-end framework)
 - Data storage in files in JSON format (without using the API)
 - Using the weather API (www.meteoprog.ua)
 
+<b>UA:</b>
+- Використання Bootstrap (front-end framework)
+- Зберігання даних у файлах у форматі JSON (без використання API)
+- Використання API погоди (www.meteoprog.ua)
 #
-
 ## License
-
 ```
 © 2022, CoolOtaku (ericspz531@gmail.com)
 ```
