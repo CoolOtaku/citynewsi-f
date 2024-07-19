@@ -35,11 +35,13 @@ This is my course work on web design. Theme of the site "Ivano-Frankivsk City Ne
 - Using Bootstrap (front-end framework)
 - Data storage in files in JSON format (without using the API)
 - Using the weather API (www.meteoprog.ua)
+- Search for information and navigation on the site
 
 <b>UA:</b>
 - Використання Bootstrap (front-end framework)
 - Зберігання даних у файлах у форматі JSON (без використання API)
 - Використання API погоди (www.meteoprog.ua)
+- Пошук інформації та навігація на сайті
 #
 ## License
 ```
