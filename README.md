@@ -4,11 +4,11 @@
 ## Description
 <b>EN:</b>
 
-This is my course work on web design. Theme of the site "**Ivano-Frankivsk** City News Site". Without using the **API**, only the interface will leave.
+This is my course work on web design. Theme of the site "**Ivano-Frankivsk** City News Site". No use of the **API**, just the interface for now.
 
 <b>UA:</b>
 
-Це є моя курсова робота, по веб дизайну. Тематика сайту "Сайт новин міста **Івано-Франківськ**". Без використання **API** покине лише інтерфейс.
+Це є моя курсова робота, по веб дизайну. Тематика сайту "Сайт новин міста **Івано-Франківськ**". Без використання **API**, поки лише інтерфейс.
 
 #
 ## Screenshots
