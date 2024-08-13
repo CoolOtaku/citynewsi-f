@@ -30,14 +30,18 @@ This is my course work on web design. Theme of the site "**Ivano-Frankivsk** Cit
 #
 ## Technologies used
 <b>EN:</b>
-- Using **Bootstrap** (front-end framework)
+- Using [**Bootstrap**](https://getbootstrap.com) (front-end framework)
 - Data storage in files in **JSON** format (without using the **API**)
+- Using the library [**jQuery**](https://jquery.com)
+- Using the ***Cookie*** system
 - Using the weather **API** ([www.meteoprog.ua](https://www.meteoprog.com/ua/))
 - Search for information and navigation on the site
 
 <b>UA:</b>
-- Використання **Bootstrap** (front-end framework)
+- Використання [**Bootstrap**](https://getbootstrap.com) (front-end framework)
 - Зберігання даних у файлах у форматі **JSON** (без використання **API**)
+- Використання бібліотеки [**jQuery**](https://jquery.com)
+- Використання системи ***Cookie***
 - Використання **API** погоди ([www.meteoprog.ua](https://www.meteoprog.com/ua/))
 - Пошук інформації та навігація на сайті
 
